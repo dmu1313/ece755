@@ -72,20 +72,20 @@ initial begin
 
     #40
     if (out0 == -17'd726)
-        $display("-----------out0 is correct-----------------");
+            $display("-----------out0 is correct for testcase 1-----------------");
     else
-        $display("-----------out0 is incorrect-----------");
+            $display("-----------out0 is incorrect for testcase 1-----------");
 
     if (out1 == -17'd348)
-        $display("-----------out1 is correct-----------");
+            $display("-----------out1 is correct for testcase 1-----------");
     else
-        $display("-----------out1 is incorrect-----------");
+            $display("-----------out1 is incorrect for testcase 1-----------");
 
 
     if (out0 == -17'd726 && out1 == -17'd348)
-        $display("*********** ALL TESTS PASSED *********");
+            $display("*********** PASSED TEST 1 *********");
     else
-        $display("*********** SOME TEST(S) FAILED *********");
+            $display("*********** FAILED TEST 1 *********");
 
  #40
 
@@ -127,20 +127,20 @@ initial begin
 
     #40
     if (out0 == 17'd1173)
-        $display("-----------out0 is correct-----------------");
+            $display("-----------out0 is correct for testcase 2-----------------");
     else
-        $display("-----------out0 is incorrect-----------");
+            $display("-----------out0 is incorrect for testcase 2-----------");
 
     if (out1 == 17'd1392)
-        $display("-----------out1 is correct-----------");
+            $display("-----------out1 is correct for testcase 2-----------");
     else
-        $display("-----------out1 is incorrect-----------");
+            $display("-----------out1 is incorrect for testcase 2-----------");
 
 
     if (out0 == 17'd1173 && out1 == 17'd1392)
-        $display("*********** ALL TESTS PASSED *********");
+            $display("*********** PASSED TEST 2 *********");
     else
-        $display("*********** SOME TEST(S) FAILED *********");
+            $display("*********** FAILED TEST 2 *********");
 
  #40
 
@@ -182,20 +182,20 @@ initial begin
 
     #40
     if (out0 == -17'd65536)
-        $display("-----------out0 is correct-----------------");
+            $display("-----------out0 is correct for testcase 3-----------------");
     else
-        $display("-----------out0 is incorrect-----------");
+            $display("-----------out0 is incorrect for testcase 3-----------");
 
     if (out1 == -17'd65536)
-        $display("-----------out1 is correct-----------");
+            $display("-----------out1 is correct for testcase 3-----------");
     else
-        $display("-----------out1 is incorrect-----------");
+            $display("-----------out1 is incorrect for testcase 3-----------");
 
 
     if (out0 == -17'd65536 && out1 == -17'd65536)
-        $display("*********** ALL TESTS PASSED *********");
+            $display("*********** PASSED TEST 3 *********");
     else
-        $display("*********** SOME TEST(S) FAILED *********");
+            $display("*********** FAILED TEST 3 *********");
 
  #40
    
@@ -237,20 +237,20 @@ initial begin
 
     #40
     if (out0 == 17'd54000)
-        $display("-----------out0 is correct-----------------");
+            $display("-----------out0 is correct for testcase 4-----------------");
     else
-        $display("-----------out0 is incorrect-----------");
+            $display("-----------out0 is incorrect for testcase 4-----------");
 
     if (out1 == 17'd54000)
-        $display("-----------out1 is correct-----------");
+            $display("-----------out1 is correct for testcase 4-----------");
     else
-        $display("-----------out1 is incorrect-----------");
+            $display("-----------out1 is incorrect for testcase 4-----------");
 
 
     if (out0 == 17'd54000 && out1 == 17'd54000)
-        $display("*********** ALL TESTS PASSED *********");
+            $display("*********** PASSED TEST 4 *********");
     else
-        $display("*********** SOME TEST(S) FAILED *********");
+            $display("*********** FAILED TEST 4 *********");
 
 end
 
