@@ -48,11 +48,6 @@ module top #(
     end
   end
 
-//  assign y0 = x0;
-//  assign y1 = x1;
-//  assign y2 = x2;
-//  assign y3 = x3;
-
   always_comb begin
     y4 = (y0 * w04) + (y1 * w14) + (y2 * w24) + (y3 * w34);
     y5 = (y0 * w05) + (y1 * w15) + (y2 * w25) + (y3 * w35);
@@ -61,10 +56,10 @@ module top #(
 
     y8 = (y4_relu * w48) + (y5_relu * w58) + (y6_relu * w68) + (y7_relu * w78);
     y9 = (y4_relu * w49) + (y5_relu * w59) + (y6_relu * w69) + (y7_relu * w79);
-  
-    out0 = y8[output_size-2:0];
-    out1 = y9[output_size-2:0];
-  end
+  end 
+
+  assign out0 = y8[output_size-2:0];
+  assign out1 = y9[output_size-2:0];
 
   relu r4(
     .in(y4),
