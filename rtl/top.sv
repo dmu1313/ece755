@@ -25,9 +25,14 @@ module top #(
   logic [hidden_layer_output_size-1:0] y4_relu, y5_relu, y6_relu, y7_relu;
   logic signed [output_size-1:0] y8, y9;
 
+  logic out0_ff, out1_ff;
+
+  assign out0_ready = out0_ff;
+  assign out1_ready = out1_ff;
+
   always_ff @(posedge clk) begin
-    out0_ready <= in_ready;
-    out1_ready <= in_ready;
+    out0_ff <= in_ready;
+    out1_ff <= in_ready;
 
     if (in_ready) begin
       y0 <= x0;
@@ -62,23 +67,23 @@ module top #(
   end
 
   relu r4(
-    .input(y4),
-    .output(y4_relu)
+    .in(y4),
+    .out(y4_relu)
   );
 
   relu r5(
-    .input(y5),
-    .output(y5_relu)
+    .in(y5),
+    .out(y5_relu)
   );
 
   relu r6(
-    .input(y6),
-    .output(y6_relu)
+    .in(y6),
+    .out(y6_relu)
   );
 
   relu r7(
-    .input(y7),
-    .output(y7_relu)
+    .in(y7),
+    .out(y7_relu)
   );
 
 endmodule
