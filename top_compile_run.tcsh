@@ -1,8 +1,10 @@
 #!/bin/tcsh
 
-source /cae/apps/env/mentor-QuestaSim-2021.2-2
+# source /cae/apps/env/mentor-QuestaSim-2021.2-2_cae2022
+source /cae/apps/env/mentor-QuestaSim-2023.2_1
 
-export PATH=/cae/apps/data/mentor-2021/questasim/bin:${PATH}
+# export PATH=/cae/apps/data/mentor-2022/questasim/bin:${PATH}
+export PATH=/cae/apps/data/mentor-2023/questasim/bin:${PATH}
 
 echo "[ Info] Starting Compilation ..."
 

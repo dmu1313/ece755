@@ -260,7 +260,7 @@ always
 
 
 initial
-    #100 $finish;
+    #400 $finish;
 
 
 endmodule
