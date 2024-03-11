@@ -131,8 +131,8 @@ module node #(
   );
 
   aggregation #(
-    input_size=hidden_layer_output_size,
-    output_size=relu_aggregation_output_size
+    .input_size(hidden_layer_output_size),
+    .output_size(relu_aggregation_output_size)
   ) agg4(
     .in1(y4_relu),
     .in2(neighbor_1_y4_relu),
@@ -141,8 +141,8 @@ module node #(
   );
 
   aggregation #(
-    input_size=hidden_layer_output_size,
-    output_size=relu_aggregation_output_size
+    .input_size(hidden_layer_output_size),
+    .output_size(relu_aggregation_output_size)
   ) agg5(
     .in1(y5_relu),
     .in2(neighbor_1_y5_relu),
@@ -151,8 +151,8 @@ module node #(
   );
 
   aggregation #(
-    input_size=hidden_layer_output_size,
-    output_size=relu_aggregation_output_size
+    .input_size(hidden_layer_output_size),
+    .output_size(relu_aggregation_output_size)
   ) agg6(
     .in1(y6_relu),
     .in2(neighbor_1_y6_relu),
@@ -161,8 +161,8 @@ module node #(
   );
 
   aggregation #(
-    input_size=hidden_layer_output_size,
-    output_size=relu_aggregation_output_size
+    .input_size(hidden_layer_output_size),
+    .output_size(relu_aggregation_output_size)
   ) agg7(
     .in1(y7_relu),
     .in2(neighbor_1_y7_relu),

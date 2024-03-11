@@ -8,7 +8,7 @@ module gnn #(
   w04, w14, w24, w34, w05, w15, w25, w35, w06, w16, w26, w36, w07, w17, w27, w37, w48, w58, w68, w78, w49, w59, w69, w79,
   out0_node0, out1_node0, out0_node1, out1_node1, out0_node2, out1_node2, out0_node3, out1_node3,
   in_ready,
-  out10_ready_node0, out11_ready_node0,mout10_ready_node1, out11_ready_node1,nout10_ready_node2, out11_ready_node2, out10_ready_node3, out11_ready_node3,
+  out10_ready_node0, out11_ready_node0, out10_ready_node1, out11_ready_node1, out10_ready_node2, out11_ready_node2, out10_ready_node3, out11_ready_node3,
   clk
 );
   input [4:0] x0_node0, x1_node0, x2_node0, x3_node0;
