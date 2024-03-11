@@ -23,7 +23,8 @@ module node #(
 
   relu_out_y4, relu_out_y5, relu_out_y6, relu_out_y7
 );
-  input signed [weight_size-1:0] x0, x1, x2, x3, w04, w05, w06, w07, w14, w15, w16, w17, w24, w25, w26, w27, w34, w35, w36, w37,
+  input signed [input_size-1:0] x0, x1, x2, x3;
+  input signed [weight_size-1:0] w04, w05, w06, w07, w14, w15, w16, w17, w24, w25, w26, w27, w34, w35, w36, w37,
     w48, w58, w49, w59, w68, w69, w78, w79;
   input in_ready;
   input clk;
