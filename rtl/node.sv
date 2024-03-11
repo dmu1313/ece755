@@ -86,7 +86,7 @@ module node #(
       y7_relu <= y7_relu;
     end
 
-    if (ready_relu_aggregation_layer) begin
+    if (ready_relu_layer) begin
       y4_relu_aggregation <= y4_relu_aggregation_out;
       y5_relu_aggregation <= y5_relu_aggregation_out;
       y6_relu_aggregation <= y6_relu_aggregation_out;
@@ -99,7 +99,7 @@ module node #(
       y7_relu_aggregation <= y7_relu_aggregation;
     end
 
-    if (ready_relu_layer) begin
+    if (ready_relu_aggregation_layer) begin
       y8 = (y4_relu_aggregation * w48) + (y5_relu_aggregation * w58) + (y6_relu_aggregation * w68) + (y7_relu_aggregation * w78);
       y9 = (y4_relu_aggregation * w49) + (y5_relu_aggregation * w59) + (y6_relu_aggregation * w69) + (y7_relu_aggregation * w79);
     end
@@ -109,8 +109,8 @@ module node #(
     end
   end
 
-  assign out0 = y8[output_size-2:0];
-  assign out1 = y9[output_size-2:0];
+  assign out0 = y8[output_size-1:0];
+  assign out1 = y9[output_size-1:0];
 
   relu #(.size(hidden_layer_output_size)) r4(
     .in(y4),

@@ -14,5 +14,9 @@ module aggregation
   input signed [input_size-1:0] in3,
   output signed [output_size-1:0] out
 );
-  assign out = in1 + in2 + in3;
+  logic signed [output_size-1:0] sign_extended_in1 = { in1[input_size-1], in1 };
+  logic signed [output_size-1:0] sign_extended_in2 = { in2[input_size-1], in2 };
+  logic signed [output_size-1:0] sign_extended_in3 = { in3[input_size-1], in3 };
+
+  assign out = sign_extended_in1 + sign_extended_in2+ sign_extended_in3;
 endmodule
