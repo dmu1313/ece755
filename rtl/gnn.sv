@@ -163,7 +163,7 @@ module gnn #(
     .in1(x0_node0),
     .in2(x0_node1),
     .in3(x0_node2),
-    .out(aggr_x0_node0)
+    .out(aggr_x0_node0_out)
   );
 
   aggregation #(
@@ -173,7 +173,7 @@ module gnn #(
     .in1(x1_node0),
     .in2(x1_node1),
     .in3(x1_node2),
-    .out(aggr_x1_node0)
+    .out(aggr_x1_node0_out)
   );
 
   aggregation #(
@@ -183,7 +183,7 @@ module gnn #(
     .in1(x2_node0),
     .in2(x2_node1),
     .in3(x2_node2),
-    .out(aggr_x2_node0)
+    .out(aggr_x2_node0_out)
   );
 
   aggregation #(
@@ -193,7 +193,7 @@ module gnn #(
     .in1(x3_node0),
     .in2(x3_node1),
     .in3(x3_node2),
-    .out(aggr_x3_node0)
+    .out(aggr_x3_node0_out)
   );
   
   ///////////// End NODE 0 Aggregation ////////////////
@@ -207,7 +207,7 @@ module gnn #(
     .in1(x0_node0),
     .in2(x0_node1),
     .in3(x0_node3),
-    .out(aggr_x0_node1)
+    .out(aggr_x0_node1_out)
   );
 
   aggregation #(
@@ -217,7 +217,7 @@ module gnn #(
     .in1(x1_node0),
     .in2(x1_node1),
     .in3(x1_node3),
-    .out(aggr_x1_node1)
+    .out(aggr_x1_node1_out)
   );
 
   aggregation #(
@@ -227,7 +227,7 @@ module gnn #(
     .in1(x2_node0),
     .in2(x2_node1),
     .in3(x2_node3),
-    .out(aggr_x2_node1)
+    .out(aggr_x2_node1_out)
   );
 
   aggregation #(
@@ -237,7 +237,7 @@ module gnn #(
     .in1(x3_node0),
     .in2(x3_node1),
     .in3(x3_node3),
-    .out(aggr_x3_node1)
+    .out(aggr_x3_node1_out)
   );
   
   ///////////// End NODE 1 Aggregation ////////////////
@@ -251,7 +251,7 @@ module gnn #(
     .in1(x0_node0),
     .in2(x0_node2),
     .in3(x0_node3),
-    .out(aggr_x0_node2)
+    .out(aggr_x0_node2_out)
   );
 
   aggregation #(
@@ -261,7 +261,7 @@ module gnn #(
     .in1(x1_node0),
     .in2(x1_node2),
     .in3(x1_node3),
-    .out(aggr_x1_node2)
+    .out(aggr_x1_node2_out)
   );
 
   aggregation #(
@@ -271,7 +271,7 @@ module gnn #(
     .in1(x2_node0),
     .in2(x2_node2),
     .in3(x2_node3),
-    .out(aggr_x2_node2)
+    .out(aggr_x2_node2_out)
   );
 
   aggregation #(
@@ -281,7 +281,7 @@ module gnn #(
     .in1(x3_node0),
     .in2(x3_node2),
     .in3(x3_node3),
-    .out(aggr_x3_node2)
+    .out(aggr_x3_node2_out)
   );
   
   ///////////// End NODE 2 Aggregation ////////////////
@@ -295,7 +295,7 @@ module gnn #(
     .in1(x0_node1),
     .in2(x0_node2),
     .in3(x0_node3),
-    .out(aggr_x0_node3)
+    .out(aggr_x0_node3_out)
   );
 
   aggregation #(
@@ -305,7 +305,7 @@ module gnn #(
     .in1(x1_node1),
     .in2(x1_node2),
     .in3(x1_node3),
-    .out(aggr_x1_node3)
+    .out(aggr_x1_node3_out)
   );
 
   aggregation #(
@@ -315,7 +315,7 @@ module gnn #(
     .in1(x2_node1),
     .in2(x2_node2),
     .in3(x2_node3),
-    .out(aggr_x2_node3)
+    .out(aggr_x2_node3_out)
   );
 
   aggregation #(
@@ -325,7 +325,7 @@ module gnn #(
     .in1(x3_node1),
     .in2(x3_node2),
     .in3(x3_node3),
-    .out(aggr_x3_node3)
+    .out(aggr_x3_node3_out)
   );
   
   ///////////// End NODE 0 Aggregation ////////////////
