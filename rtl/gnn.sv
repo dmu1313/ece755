@@ -1,6 +1,6 @@
 module gnn #(
   parameter input_size = 5,
-  parameter agg_input_size=6,
+  parameter agg_input_size=7,
   parameter relu_output_size=13
 )
 ( 

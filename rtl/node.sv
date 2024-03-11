@@ -1,10 +1,10 @@
 
 module node #(
   parameter weight_size = 5,
-  parameter input_size = 6,
+  parameter input_size = 7,
   parameter hidden_layer_input_size = 13,
   parameter hidden_layer_output_size = 13,
-  parameter relu_aggregation_output_size = 14,
+  parameter relu_aggregation_output_size = 15,
   parameter output_size = 21
 )
 (
