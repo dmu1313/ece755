@@ -34,10 +34,41 @@ module gnn #(
 
   logic signed [agg_input_size-1:0] aggr_x0_node0, aggr_x0_node1, aggr_x0_node2, aggr_x0_node3, aggr_x1_node0, aggr_x1_node1, aggr_x1_node2, aggr_x1_node3, aggr_x2_node0, aggr_x2_node1, aggr_x2_node2, aggr_x2_node3, aggr_x3_node0, aggr_x3_node1, aggr_x3_node2, aggr_x3_node3;
 
+  logic signed [agg_input_size-1:0] aggr_x0_node0_out, aggr_x1_node0_out, aggr_x2_node0_out, aggr_x3_node0_out;
+  logic signed [agg_input_size-1:0] aggr_x0_node1_out, aggr_x1_node1_out, aggr_x2_node1_out, aggr_x3_node1_out;
+  logic signed [agg_input_size-1:0] aggr_x0_node2_out, aggr_x1_node2_out, aggr_x2_node2_out, aggr_x3_node2_out;
+  logic signed [agg_input_size-1:0] aggr_x0_node3_out, aggr_x1_node3_out, aggr_x2_node3_out, aggr_x3_node3_out;
+
   logic signed [relu_output_size-1:0] y4_relu_node0, y5_relu_node0, y6_relu_node0, y7_relu_node0;
   logic signed [relu_output_size-1:0] y4_relu_node1, y5_relu_node1, y6_relu_node1, y7_relu_node1;
   logic signed [relu_output_size-1:0] y4_relu_node2, y5_relu_node2, y6_relu_node2, y7_relu_node2;
   logic signed [relu_output_size-1:0] y4_relu_node3, y5_relu_node3, y6_relu_node3, y7_relu_node3;
+
+  logic input_aggr_ready;
+
+  always_ff @(posedge clk) begin
+    input_aggr_ready <= in_ready;
+
+    aggr_x0_node0 <= aggr_x0_node0_out;
+    aggr_x1_node0 <= aggr_x1_node0_out;
+    aggr_x2_node0 <= aggr_x2_node0_out;
+    aggr_x3_node0 <= aggr_x3_node0_out;
+    
+    aggr_x0_node1 <= aggr_x0_node1_out;
+    aggr_x1_node1 <= aggr_x1_node1_out;
+    aggr_x2_node1 <= aggr_x2_node1_out;
+    aggr_x3_node1 <= aggr_x3_node1_out;
+    
+    aggr_x0_node2 <= aggr_x0_node2_out;
+    aggr_x1_node2 <= aggr_x1_node2_out;
+    aggr_x2_node2 <= aggr_x2_node2_out;
+    aggr_x3_node2 <= aggr_x3_node2_out;
+    
+    aggr_x0_node3 <= aggr_x0_node3_out;
+    aggr_x1_node3 <= aggr_x1_node3_out;
+    aggr_x2_node3 <= aggr_x2_node3_out;
+    aggr_x3_node3 <= aggr_x3_node3_out;
+  end
 
   node n0 (
     .x0(aggr_x0_node0), .x1(aggr_x1_node0), .x2(aggr_x2_node0), .x3(aggr_x3_node0),
@@ -49,7 +80,7 @@ module gnn #(
     
     .out0(out0_node0), .out1(out1_node0),
     .out0_ready(out10_ready_node0), .out1_ready(out11_ready_node0),
-    .in_ready(in_ready),
+    .in_ready(input_aggr_ready),
     .clk(clk),
 
     .neighbor_1_y4_relu(y4_relu_node_1), .neighbor_2_y4_relu(y4_relu_node_2),
@@ -70,7 +101,7 @@ module gnn #(
     
     .out0(out0_node1), .out1(out1_node1),
     .out0_ready(out10_ready_node1), .out1_ready(out11_ready_node1),
-    .in_ready(in_ready),
+    .in_ready(input_aggr_ready),
     .clk(clk),
 
     .neighbor_1_y4_relu(y4_relu_node_0), .neighbor_2_y4_relu(y4_relu_node_3),
@@ -91,7 +122,7 @@ module gnn #(
     
     .out0(out0_node2), .out1(out1_node2),
     .out0_ready(out10_ready_node2), .out1_ready(out11_ready_node2),
-    .in_ready(in_ready),
+    .in_ready(input_aggr_ready),
     .clk(clk),
 
     .neighbor_1_y4_relu(y4_relu_node_0), .neighbor_2_y4_relu(y4_relu_node_3),
@@ -112,7 +143,7 @@ module gnn #(
     
     .out0(out0_node3), .out1(out1_node3),
     .out0_ready(out10_ready_node3), .out1_ready(out11_ready_node3),
-    .in_ready(in_ready),
+    .in_ready(input_aggr_ready),
     .clk(clk),
 
     .neighbor_1_y4_relu(y4_relu_node_1), .neighbor_2_y4_relu(y4_relu_node_2),
