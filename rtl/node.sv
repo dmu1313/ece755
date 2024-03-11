@@ -22,11 +22,11 @@ module node #(
 
   relu_out_y4, relu_out_y5, relu_out_y6, relu_out_y7
 );
-  input signed [4:0] x0, x1, x2, x3, w04, w05, w06, w07, w14, w15, w16, w17, w24, w25, w26, w27, w34, w35, w36, w37,
+  input signed [input_size-1:0] x0, x1, x2, x3, w04, w05, w06, w07, w14, w15, w16, w17, w24, w25, w26, w27, w34, w35, w36, w37,
     w48, w58, w49, w59, w68, w69, w78, w79;
   input in_ready;
   input clk;
-  output [16:0] out0, out1;
+  output [output_size-1:0] out0, out1;
   output out0_ready, out1_ready;  
 
   input signed [hidden_layer_output_size-1:0] neighbor_1_y4_relu, neighbor_2_y4_relu;
@@ -110,22 +110,22 @@ module node #(
   assign out0 = y8[output_size-2:0];
   assign out1 = y9[output_size-2:0];
 
-  relu r4(
+  relu #(.size(hidden_layer_output_size)) r4(
     .in(y4),
     .out(relu_out_y4)
   );
 
-  relu r5(
+  relu #(.size(hidden_layer_output_size)) r5(
     .in(y5),
     .out(relu_out_y5)
   );
 
-  relu r6(
+  relu #(.size(hidden_layer_output_size)) r6(
     .in(y6),
     .out(relu_out_y6)
   );
 
-  relu r7(
+  relu #(.size(hidden_layer_output_size)) r7(
     .in(y7),
     .out(relu_out_y7)
   );

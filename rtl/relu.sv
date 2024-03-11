@@ -1,7 +1,7 @@
 // relu activation with parameterized size
 module relu
 #(
-    parameter size = 12
+    parameter size
 )
 (
     input [size-1:0] in,

@@ -83,10 +83,10 @@ module gnn #(
     .in_ready(input_aggr_ready),
     .clk(clk),
 
-    .neighbor_1_y4_relu(y4_relu_node_1), .neighbor_2_y4_relu(y4_relu_node_2),
-    .neighbor_1_y5_relu(y5_relu_node_1), .neighbor_2_y5_relu(y5_relu_node_2),
-    .neighbor_1_y6_relu(y6_relu_node_1), .neighbor_2_y6_relu(y6_relu_node_2),
-    .neighbor_1_y7_relu(y7_relu_node_1), .neighbor_2_y7_relu(y7_relu_node_2),
+    .neighbor_1_y4_relu(y4_relu_node1), .neighbor_2_y4_relu(y4_relu_node2),
+    .neighbor_1_y5_relu(y5_relu_node1), .neighbor_2_y5_relu(y5_relu_node2),
+    .neighbor_1_y6_relu(y6_relu_node1), .neighbor_2_y6_relu(y6_relu_node2),
+    .neighbor_1_y7_relu(y7_relu_node1), .neighbor_2_y7_relu(y7_relu_node2),
 
     .relu_out_y4(y4_relu_node0), .relu_out_y5(y5_relu_node0), .relu_out_y6(y6_relu_node0), .relu_out_y7(y7_relu_node0)
   );
@@ -104,10 +104,10 @@ module gnn #(
     .in_ready(input_aggr_ready),
     .clk(clk),
 
-    .neighbor_1_y4_relu(y4_relu_node_0), .neighbor_2_y4_relu(y4_relu_node_3),
-    .neighbor_1_y5_relu(y5_relu_node_0), .neighbor_2_y5_relu(y5_relu_node_3),
-    .neighbor_1_y6_relu(y6_relu_node_0), .neighbor_2_y6_relu(y6_relu_node_3),
-    .neighbor_1_y7_relu(y7_relu_node_0), .neighbor_2_y7_relu(y7_relu_node_3),
+    .neighbor_1_y4_relu(y4_relu_node0), .neighbor_2_y4_relu(y4_relu_node3),
+    .neighbor_1_y5_relu(y5_relu_node0), .neighbor_2_y5_relu(y5_relu_node3),
+    .neighbor_1_y6_relu(y6_relu_node0), .neighbor_2_y6_relu(y6_relu_node3),
+    .neighbor_1_y7_relu(y7_relu_node0), .neighbor_2_y7_relu(y7_relu_node3),
 
     .relu_out_y4(y4_relu_node1), .relu_out_y5(y5_relu_node1), .relu_out_y6(y6_relu_node1), .relu_out_y7(y7_relu_node1)
   );
@@ -125,10 +125,10 @@ module gnn #(
     .in_ready(input_aggr_ready),
     .clk(clk),
 
-    .neighbor_1_y4_relu(y4_relu_node_0), .neighbor_2_y4_relu(y4_relu_node_3),
-    .neighbor_1_y5_relu(y5_relu_node_0), .neighbor_2_y5_relu(y5_relu_node_3),
-    .neighbor_1_y6_relu(y6_relu_node_0), .neighbor_2_y6_relu(y6_relu_node_3),
-    .neighbor_1_y7_relu(y7_relu_node_0), .neighbor_2_y7_relu(y7_relu_node_3),
+    .neighbor_1_y4_relu(y4_relu_node0), .neighbor_2_y4_relu(y4_relu_node3),
+    .neighbor_1_y5_relu(y5_relu_node0), .neighbor_2_y5_relu(y5_relu_node3),
+    .neighbor_1_y6_relu(y6_relu_node0), .neighbor_2_y6_relu(y6_relu_node3),
+    .neighbor_1_y7_relu(y7_relu_node0), .neighbor_2_y7_relu(y7_relu_node3),
 
     .relu_out_y4(y4_relu_node2), .relu_out_y5(y5_relu_node2), .relu_out_y6(y6_relu_node2), .relu_out_y7(y7_relu_node2)
   );
@@ -146,10 +146,10 @@ module gnn #(
     .in_ready(input_aggr_ready),
     .clk(clk),
 
-    .neighbor_1_y4_relu(y4_relu_node_1), .neighbor_2_y4_relu(y4_relu_node_2),
-    .neighbor_1_y5_relu(y5_relu_node_1), .neighbor_2_y5_relu(y5_relu_node_2),
-    .neighbor_1_y6_relu(y6_relu_node_1), .neighbor_2_y6_relu(y6_relu_node_2),
-    .neighbor_1_y7_relu(y7_relu_node_1), .neighbor_2_y7_relu(y7_relu_node_2),
+    .neighbor_1_y4_relu(y4_relu_node1), .neighbor_2_y4_relu(y4_relu_node2),
+    .neighbor_1_y5_relu(y5_relu_node1), .neighbor_2_y5_relu(y5_relu_node2),
+    .neighbor_1_y6_relu(y6_relu_node1), .neighbor_2_y6_relu(y6_relu_node2),
+    .neighbor_1_y7_relu(y7_relu_node1), .neighbor_2_y7_relu(y7_relu_node2),
 
     .relu_out_y4(y4_relu_node3), .relu_out_y5(y5_relu_node3), .relu_out_y6(y6_relu_node3), .relu_out_y7(y7_relu_node3)
   );

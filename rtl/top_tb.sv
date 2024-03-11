@@ -1,6 +1,6 @@
 `timescale 1ns/1ps
 
-module tb_top_v1();
+module tb_top();
 
 reg [4:0] x0_node0, x1_node0, x2_node0, x3_node0;
 reg [4:0] x0_node1, x1_node1, x2_node1, x3_node1;
