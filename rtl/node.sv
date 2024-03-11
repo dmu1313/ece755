@@ -58,7 +58,7 @@ module node #(
     ready_hidden_layer <= in_ready;
     ready_relu_layer <= ready_hidden_layer;
     ready_relu_aggregation_layer <= ready_relu_layer;
-    ready_output_layer <= ready_relu_layer;
+    ready_output_layer <= ready_relu_aggregation_layer;
 
     if (in_ready) begin
       y4 <= (y0 * w04) + (y1 * w14) + (y2 * w24) + (y3 * w34);
@@ -100,8 +100,8 @@ module node #(
     end
 
     if (ready_relu_layer) begin
-      y8 = (y4_relu * w48) + (y5_relu * w58) + (y6_relu * w68) + (y7_relu * w78);
-      y9 = (y4_relu * w49) + (y5_relu * w59) + (y6_relu * w69) + (y7_relu * w79);
+      y8 = (y4_relu_aggregation * w48) + (y5_relu_aggregation * w58) + (y6_relu_aggregation * w68) + (y7_relu_aggregation * w78);
+      y9 = (y4_relu_aggregation * w49) + (y5_relu_aggregation * w59) + (y6_relu_aggregation * w69) + (y7_relu_aggregation * w79);
     end
     else begin
       y8 <= y8;
