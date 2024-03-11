@@ -28,7 +28,8 @@ echo "[ Info] Compiling Netlist and Testbench ..."
 ## <list-of-source-files> \
 
 vlog -suppress vlog-2583 -sv +acc -nologo -quiet -work work \
-    ./rtl/top.sv ./rtl/relu.sv \
+    ./rtl/top.sv ./rtl/relu.sv ./rtl/node.sv \
+    ./rtl/aggregation.sv ./rtl/gnn.sv \
     ./rtl/top_tb.sv 
 
 ###################################################################################################
