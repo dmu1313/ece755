@@ -157,8 +157,8 @@ module gnn #(
   ///////////// Begin NODE 0 Aggregation ////////////////
 
   aggregation #(
-    input_size=input_size,
-    output_size=agg_input_size
+    .input_size(input_size),
+    .output_size(agg_input_size)
   ) x0_node0_aggregated(
     .in1(x0_node0),
     .in2(x0_node1),
@@ -167,8 +167,8 @@ module gnn #(
   );
 
   aggregation #(
-    input_size=input_size,
-    output_size=agg_input_size
+    .input_size(input_size),
+    .output_size(agg_input_size)
   ) x1_node0_aggregated(
     .in1(x1_node0),
     .in2(x1_node1),
@@ -177,8 +177,8 @@ module gnn #(
   );
 
   aggregation #(
-    input_size=input_size,
-    output_size=agg_input_size
+    .input_size(input_size),
+    .output_size(agg_input_size)
   ) x2_node0_aggregated(
     .in1(x2_node0),
     .in2(x2_node1),
@@ -187,8 +187,8 @@ module gnn #(
   );
 
   aggregation #(
-    input_size=input_size,
-    output_size=agg_input_size
+    .input_size(input_size),
+    .output_size(agg_input_size)
   ) x3_node0_aggregated(
     .in1(x3_node0),
     .in2(x3_node1),
@@ -201,8 +201,8 @@ module gnn #(
   ///////////// Begin NODE 1 Aggregation ////////////////
 
   aggregation #(
-    input_size=input_size,
-    output_size=agg_input_size
+    .input_size(input_size),
+    .output_size(agg_input_size)
   ) x0_node1_aggregated(
     .in1(x0_node0),
     .in2(x0_node1),
@@ -211,8 +211,8 @@ module gnn #(
   );
 
   aggregation #(
-    input_size=input_size,
-    output_size=agg_input_size
+    .input_size(input_size),
+    .output_size(agg_input_size)
   ) x1_node1_aggregated(
     .in1(x1_node0),
     .in2(x1_node1),
@@ -221,8 +221,8 @@ module gnn #(
   );
 
   aggregation #(
-    input_size=input_size,
-    output_size=agg_input_size
+    .input_size(input_size),
+    .output_size(agg_input_size)
   ) x2_node1_aggregated(
     .in1(x2_node0),
     .in2(x2_node1),
@@ -231,8 +231,8 @@ module gnn #(
   );
 
   aggregation #(
-    input_size=input_size,
-    output_size=agg_input_size
+    .input_size(input_size),
+    .output_size(agg_input_size)
   ) x3_node1_aggregated(
     .in1(x3_node0),
     .in2(x3_node1),
@@ -245,8 +245,8 @@ module gnn #(
   ///////////// Begin NODE 2 Aggregation ////////////////
 
   aggregation #(
-    input_size=input_size,
-    output_size=agg_input_size
+    .input_size(input_size),
+    .output_size(agg_input_size)
   ) x0_node2_aggregated(
     .in1(x0_node0),
     .in2(x0_node2),
@@ -255,8 +255,8 @@ module gnn #(
   );
 
   aggregation #(
-    input_size=input_size,
-    output_size=agg_input_size
+    .input_size(input_size),
+    .output_size(agg_input_size)
   ) x1_node2_aggregated(
     .in1(x1_node0),
     .in2(x1_node2),
@@ -265,8 +265,8 @@ module gnn #(
   );
 
   aggregation #(
-    input_size=input_size,
-    output_size=agg_input_size
+    .input_size(input_size),
+    .output_size(agg_input_size)
   ) x2_node2_aggregated(
     .in1(x2_node0),
     .in2(x2_node2),
@@ -275,8 +275,8 @@ module gnn #(
   );
 
   aggregation #(
-    input_size=input_size,
-    output_size=agg_input_size
+    .input_size(input_size),
+    .output_size(agg_input_size)
   ) x3_node2_aggregated(
     .in1(x3_node0),
     .in2(x3_node2),
@@ -289,8 +289,8 @@ module gnn #(
   ///////////// Begin NODE 3 Aggregation ////////////////
 
   aggregation #(
-    input_size=input_size,
-    output_size=agg_input_size
+    .input_size(input_size),
+    .output_size(agg_input_size)
   ) x0_node3_aggregated(
     .in1(x0_node1),
     .in2(x0_node2),
@@ -299,8 +299,8 @@ module gnn #(
   );
 
   aggregation #(
-    input_size=input_size,
-    output_size=agg_input_size
+    .input_size(input_size),
+    .output_size(agg_input_size)
   ) x1_node3_aggregated(
     .in1(x1_node1),
     .in2(x1_node2),
@@ -309,8 +309,8 @@ module gnn #(
   );
 
   aggregation #(
-    input_size=input_size,
-    output_size=agg_input_size
+    .input_size(input_size),
+    .output_size(agg_input_size)
   ) x2_node3_aggregated(
     .in1(x2_node1),
     .in2(x2_node2),
@@ -319,8 +319,8 @@ module gnn #(
   );
 
   aggregation #(
-    input_size=input_size,
-    output_size=agg_input_size
+    .input_size(input_size),
+    .output_size(agg_input_size)
   ) x3_node3_aggregated(
     .in1(x3_node1),
     .in2(x3_node2),
